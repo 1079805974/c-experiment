@@ -1,0 +1,1 @@
+g++ ../experiment_2/lab2_1.o ../experiment_2/lab2_2.o ../experiment_2/lab2_3.o ../experiment_2/lab2_4.o lab3_1.cpp -D LAB3_1 -o lab3_1
