@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <malloc.h>
 #include "cpoint.h"
 
 CPoint::CPoint(int x, int y){
@@ -44,8 +44,11 @@ int CPoint::nCount = 0;
 
 int main(int argc, char const *argv[])
 {
-    CPoint A(1,2);
-    A.ShowPoint();
+    CPoint *A = (CPoint*)malloc(sizeof(CPoint));
+    A->SetX(2);
+    A->SetY(6);
+    A->ShowPoint();
+    cout << (sizeof(CPoint));
     std::cin.get();
     return 0;
 }
